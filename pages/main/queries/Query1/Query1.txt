@@ -1,0 +1,1 @@
+SELECT public.measurements.user_id FROM public.measurements;

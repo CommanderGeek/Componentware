@@ -1,0 +1,1 @@
+SELECT m_time as x, value as y FROM public.measurements WHERE user_id = {{this.params.userId}} AND DATE(m_time) = {{this.params.time}};

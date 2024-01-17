@@ -1,0 +1,2 @@
+SELECT public.users.user_id as USER, sum(value) as Gesamtverbrauch, first_name, last_name FROM public.measurements inner join public.users on public.users.user_id = public.measurements.user_id where public.users.user_id = public.measurements.user_id GROUP BY public.users.user_id order by sum(public.measurements.value) DESC;
+

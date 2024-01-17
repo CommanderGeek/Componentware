@@ -1,0 +1,5 @@
+SELECT * FROM points p
+	INNER JOIN users u on u.user_id = p.user_id
+	ORDER BY p.points DESC
+	LIMIT 10
+;

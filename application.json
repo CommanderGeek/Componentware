@@ -1,0 +1,51 @@
+{
+  "pages": [
+    {
+      "id": "main",
+      "isDefault": true
+    },
+    {
+      "id": "Gesamtverbrauch-Details",
+      "isDefault": false
+    },
+    {
+      "id": "FAQ",
+      "isDefault": false
+    },
+    {
+      "id": "Tagesverbrauch-Details",
+      "isDefault": false
+    },
+    {
+      "id": "Duel",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#C7F3F0",
+  "icon": "globe",
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "publishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "unpublishedCustomJSLibs": [
+    {
+      "uidString": "xmlParser_https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/3.17.5/parser.min.js"
+    }
+  ],
+  "publishedCustomJSLibs": [],
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "embedSetting": {
+    "height": "720px",
+    "width": "1024px",
+    "showNavigationBar": true
+  },
+  "collapseInvisibleWidgets": true,
+  "isManualUpdate": false,
+  "deleted": false
+}

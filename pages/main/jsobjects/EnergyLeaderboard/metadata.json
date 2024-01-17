@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "EnergyLeaderboard",
+    "pageId": "main",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "main_EnergyLeaderboard",
+  "deleted": false,
+  "gitSyncId": "6537828548ffd54dc76e4d1c_65648f5822b1375fef2b8ff8"
+}

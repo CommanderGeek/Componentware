@@ -1,0 +1,1 @@
+SELECT * FROM public."kriegsverbrechen" LIMIT 10;

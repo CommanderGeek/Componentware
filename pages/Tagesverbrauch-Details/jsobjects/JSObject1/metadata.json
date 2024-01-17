@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Tagesverbrauch-Details",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Tagesverbrauch-Details_JSObject1",
+  "deleted": false,
+  "gitSyncId": "6537828548ffd54dc76e4d1c_6577a35146902a7f0a038ba2"
+}

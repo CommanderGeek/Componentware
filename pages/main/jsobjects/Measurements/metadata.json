@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Measurements",
+    "pageId": "main",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "main_Measurements",
+  "deleted": false,
+  "gitSyncId": "6537828548ffd54dc76e4d1c_6553c7806bfa527bb085b3f6"
+}

@@ -1,0 +1,115 @@
+{
+  "unpublishedPage": {
+    "name": "main",
+    "slug": "main",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 2170,
+          "containerStyle": "none",
+          "snapRows": 121,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 87,
+          "minHeight": 1230,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "main_EnergyLeaderboard.EnergyPerUser",
+              "name": "EnergyLeaderboard.EnergyPerUser",
+              "collectionId": "main_EnergyLeaderboard",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  EnergyPerUser.run().then(r => storeValue(\"EnergyBoard\", r));\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "main_EnergyPerUser",
+              "name": "EnergyPerUser",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "main_alert.meineFunktion",
+              "name": "alert.meineFunktion",
+              "collectionId": "main_alert",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  showAlert('Dies ist ein Alert. Danke fürs neu', 'info');\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "main_all_users",
+              "name": "all_users",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "main_liveDate.runInterval",
+              "name": "liveDate.runInterval",
+              "collectionId": "main_liveDate",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  setInterval(() => {\n    storeValue(\"nowStore\", Date.now());\n  }, 1000, \"myTimer\");\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "main_points_query",
+              "name": "points_query",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "main_self_score",
+              "name": "self_score",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "this.params.userId"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "main",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "6537828548ffd54dc76e4d1c_65532e2431b482694218f8c3"
+}
