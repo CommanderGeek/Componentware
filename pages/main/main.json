@@ -28,6 +28,24 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "main_EnergyPerUser",
+              "name": "EnergyPerUser",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "main_all_users",
+              "name": "all_users",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "main_EnergyLeaderboard.EnergyPerUser",
               "name": "EnergyLeaderboard.EnergyPerUser",
               "collectionId": "main_EnergyLeaderboard",
@@ -36,14 +54,6 @@
               "jsonPathKeys": [
                 "() => {\n  EnergyPerUser.run().then(r => storeValue(\"EnergyBoard\", r));\n}"
               ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "main_EnergyPerUser",
-              "name": "EnergyPerUser",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             },
             {
@@ -58,14 +68,6 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "main_all_users",
-              "name": "all_users",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "main_liveDate.runInterval",
               "name": "liveDate.runInterval",
               "collectionId": "main_liveDate",
@@ -75,9 +77,7 @@
                 "() => {\n  setInterval(() => {\n    storeValue(\"nowStore\", Date.now());\n  }, 1000, \"myTimer\");\n}"
               ],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "main_points_query",
               "name": "points_query",
