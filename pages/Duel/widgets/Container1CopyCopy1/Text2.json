@@ -27,7 +27,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "Spare 1,1 kW ein um wieder an der Spitze zu sein um dir 200 Punkte zu sichern!",
+    "text": "Spare 1,1 kW ein um wieder an der Spitze zu sein und dir 200 Punkte zu sichern!",
     "key": "q0cfzblove",
     "isDeprecated": false,
     "rightColumn": 58,
